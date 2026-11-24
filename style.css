@@ -1,0 +1,587 @@
+
+/* =================================
+   REPORTAI - GLOBAL STYLE
+================================= */
+
+.stApp {
+    background: #fbf9f4;
+    font-family: 'Segoe UI', sans-serif;
+    color: #20243a;
+}
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* =================================
+   LOGIN PAGE BACKGROUND
+================================= */
+
+.stApp:has(.login-header) {
+    background:
+        radial-gradient(circle at 10% 10%, #39336e 0%, transparent 40%),
+        linear-gradient(135deg, #171936, #24234c);
+    min-height: 100vh;
+}
+
+.stApp:has(.login-header) .block-container {
+    max-width: 1150px;
+    padding-top: 45px;
+}
+
+/* =================================
+   BRAND HEADER
+================================= */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.brand-icon {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #9275ff, #6848df);
+    color: white;
+    font-size: 35px;
+    box-shadow: 0 8px 25px #7559ed66;
+}
+
+.login-header h1 {
+    color: #1cbfc5 !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    color: #eff1ef !important;
+    font-size: 15px;
+}
+
+/* =================================
+   WIDE RECTANGULAR LOGIN CARD
+================================= */
+
+.stApp:has(.login-header)
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #eeebeb !important;
+    border: none !important;
+    border-radius: 22px !important;
+    padding: 35px 42px !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* =================================
+   LOGIN HEADINGS
+================================= */
+
+.welcome-heading {
+    margin-bottom: 25px;
+}
+
+.welcome-heading h2 {
+    color: #2c5491 !important;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    margin-bottom: 8px !important;
+}
+
+.welcome-heading p {
+    color: #776292 !important;
+    font-size: 15px !important;
+}
+
+/* =================================
+   INPUT LABELS
+================================= */
+
+.stApp:has(.login-header)
+[data-testid="stWidgetLabel"] p {
+    color: #5153b9 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+/* =================================
+   INPUT BOXES
+================================= */
+
+.stApp:has(.login-header)
+[data-testid="stTextInput"] input {
+    background: #fcf9f7 !important;
+    color: #222640 !important;
+    border: 1px solid #d9dced !important;
+    border-radius: 11px !important;
+    min-height: 48px !important;
+    padding: 12px 15px !important;
+}
+
+.stApp:has(.login-header)
+[data-testid="stTextInput"] input:focus {
+    border: 1px solid #7958e8 !important;
+    box-shadow: 0 0 0 2px #7958e822 !important;
+}
+
+.stApp:has(.login-header)
+[data-testid="stTextInput"] input::placeholder {
+    color: #9296aa !important;
+}
+
+/* =================================
+   LOGIN BUTTON
+================================= */
+
+.stApp:has(.login-header)
+[data-testid="stFormSubmitButton"] button {
+    background: linear-gradient(100deg, #6748dc, #9170f5) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 11px !important;
+    height: 49px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    transition: 0.25s ease;
+}
+
+.stApp:has(.login-header)
+[data-testid="stFormSubmitButton"] button:hover {
+    background: linear-gradient(100deg, #5033c5, #7653e4) !important;
+    box-shadow: 0 7px 18px #7653e455;
+    transform: translateY(-2px);
+}
+
+/* =================================
+   OTHER LOGIN BUTTONS
+================================= */
+
+.stApp:has(.login-header)
+.stButton button {
+    background: #f0edff !important;
+    color: #6045cf !important;
+    border: 1px solid #ded7ff !important;
+    border-radius: 11px !important;
+    min-height: 45px;
+    font-weight: 700 !important;
+}
+
+.stApp:has(.login-header)
+.stButton button:hover {
+    background: #e4deff !important;
+    border-color: #a99aef !important;
+}
+
+/* =================================
+   LOGIN FOOTER
+================================= */
+
+.login-footer {
+    text-align: center;
+    color: #85899c !important;
+    font-size: 13px;
+    margin-top: 22px;
+}
+
+/* =================================
+   ALERTS
+================================= */
+
+.stApp:has(.login-header)
+[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+/* =================================
+   MAIN DASHBOARD
+================================= */
+
+h1, h2, h3 {
+    color: #222746;
+    font-weight: 700;
+}
+
+.stButton button,
+.stDownloadButton button {
+    background: linear-gradient(100deg, #6748dc, #9170f5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 650;
+    min-height: 43px;
+}
+
+.stTextArea textarea {
+    background: white !important;
+    color: #252943 !important;
+    border-radius: 12px !important;
+    border: 1px solid #dfe1ed !important;
+}
+
+section[data-testid="stSidebar"] {
+    background: #191d3b;
+}
+
+section[data-testid="stSidebar"] * {
+    color: white;
+}
+
+/* =====================================================
+   REPORTAI - INNER DASHBOARD
+   Same theme as Login Page
+===================================================== */
+
+/* MAIN DASHBOARD BACKGROUND */
+
+.stApp:not(:has(.login-header)) {
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            #39336e 0%,
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #171936,
+            #24234c
+        ) !important;
+
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #20243a;
+}
+
+/* MAIN CONTENT WIDTH */
+
+.stApp:not(:has(.login-header)) .block-container {
+    max-width: 1250px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* DASHBOARD HEADINGS */
+
+.stApp:not(:has(.login-header)) h1 {
+    color: #1cbfc5 !important;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.stApp:not(:has(.login-header)) h2 {
+    color: #2c5491 !important;
+    font-weight: 800;
+}
+
+.stApp:not(:has(.login-header)) h3 {
+    color: #5153b9 !important;
+    font-weight: 700;
+}
+
+/* NORMAL TEXT */
+
+.stApp:not(:has(.login-header)) p {
+    color: #eff1ef;
+}
+
+/* DASHBOARD CONTAINERS */
+
+.stApp:not(:has(.login-header))
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #eeebeb !important;
+    border: 1px solid #d9dced !important;
+    border-radius: 18px !important;
+    padding: 20px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* SIDEBAR */
+
+.stApp:not(:has(.login-header))
+section[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #171936,
+        #24234c
+    ) !important;
+
+    border-right: 1px solid #39336e;
+}
+
+.stApp:not(:has(.login-header))
+section[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+
+/* SIDEBAR HEADINGS */
+
+.stApp:not(:has(.login-header))
+section[data-testid="stSidebar"] h1,
+.stApp:not(:has(.login-header))
+section[data-testid="stSidebar"] h2,
+.stApp:not(:has(.login-header))
+section[data-testid="stSidebar"] h3 {
+    color: #1cbfc5 !important;
+}
+
+/* INPUT LABELS */
+
+.stApp:not(:has(.login-header))
+[data-testid="stWidgetLabel"] p {
+    color: #5153b9 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+/* TEXT INPUTS */
+
+.stApp:not(:has(.login-header))
+[data-testid="stTextInput"] input {
+    background: #fcf9f7 !important;
+    color: #222640 !important;
+    border: 1px solid #d9dced !important;
+    border-radius: 11px !important;
+    min-height: 45px !important;
+    padding: 12px 15px !important;
+}
+
+.stApp:not(:has(.login-header))
+[data-testid="stTextInput"] input:focus {
+    border: 1px solid #7958e8 !important;
+    box-shadow: 0 0 0 2px #7958e822 !important;
+}
+
+/* TEXT AREA */
+
+.stApp:not(:has(.login-header))
+[data-testid="stTextArea"] textarea {
+    background: #fcf9f7 !important;
+    color: #222640 !important;
+    border: 1px solid #d9dced !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    line-height: 1.7 !important;
+}
+
+.stApp:not(:has(.login-header))
+[data-testid="stTextArea"] textarea:focus {
+    border: 1px solid #7958e8 !important;
+    box-shadow: 0 0 0 2px #7958e822 !important;
+}
+
+/* SELECT BOX */
+
+.stApp:not(:has(.login-header))
+[data-testid="stSelectbox"] div[data-baseweb="select"] {
+    background: #fcf9f7 !important;
+    border-radius: 10px !important;
+}
+
+/* MAIN BUTTONS */
+
+.stApp:not(:has(.login-header))
+.stButton button {
+    background: linear-gradient(
+        100deg,
+        #6748dc,
+        #9170f5
+    ) !important;
+
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    min-height: 43px !important;
+    font-weight: 700 !important;
+    transition: 0.25s ease;
+}
+
+.stApp:not(:has(.login-header))
+.stButton button:hover {
+    background: linear-gradient(
+        100deg,
+        #5033c5,
+        #7653e4
+    ) !important;
+
+    box-shadow: 0 7px 18px #7653e455;
+    transform: translateY(-2px);
+}
+
+/* FORM SUBMIT BUTTONS */
+
+.stApp:not(:has(.login-header))
+[data-testid="stFormSubmitButton"] button {
+    background: linear-gradient(
+        100deg,
+        #6748dc,
+        #9170f5
+    ) !important;
+
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 11px !important;
+    min-height: 47px !important;
+    font-weight: 700 !important;
+}
+
+/* DOWNLOAD BUTTON */
+
+.stApp:not(:has(.login-header))
+.stDownloadButton button {
+    background: linear-gradient(
+        100deg,
+        #6748dc,
+        #9170f5
+    ) !important;
+
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    min-height: 45px !important;
+    font-weight: 700 !important;
+}
+
+/* PDF UPLOADER */
+
+.stApp:not(:has(.login-header))
+[data-testid="stFileUploader"] {
+    background: #fcf9f7 !important;
+    border: 1px dashed #9170f5 !important;
+    border-radius: 14px !important;
+    padding: 15px !important;
+}
+
+/* METRIC CARDS */
+
+.stApp:not(:has(.login-header))
+[data-testid="stMetric"] {
+    background: #eeebeb !important;
+    border: 1px solid #d9dced !important;
+    border-radius: 14px !important;
+    padding: 18px !important;
+}
+
+.stApp:not(:has(.login-header))
+[data-testid="stMetricLabel"] {
+    color: #5153b9 !important;
+}
+
+.stApp:not(:has(.login-header))
+[data-testid="stMetricValue"] {
+    color: #2c5491 !important;
+}
+
+/* EXPANDER */
+
+.stApp:not(:has(.login-header))
+[data-testid="stExpander"] {
+    background: #eeebeb !important;
+    border: 1px solid #d9dced !important;
+    border-radius: 12px !important;
+}
+
+/* TABS */
+
+.stApp:not(:has(.login-header))
+button[data-baseweb="tab"] {
+    color: #eff1ef !important;
+    font-weight: 700 !important;
+}
+
+.stApp:not(:has(.login-header))
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #1cbfc5 !important;
+}
+
+/* ALERTS */
+
+.stApp:not(:has(.login-header))
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+}
+
+/* DIVIDERS */
+
+.stApp:not(:has(.login-header)) hr {
+    border-color: #7770a5 !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 700px) {
+
+    .stApp:not(:has(.login-header)) .block-container {
+        padding: 1rem !important;
+    }
+
+    .stApp:not(:has(.login-header)) h1 {
+        font-size: 25px !important;
+    }
+
+    .stApp:not(:has(.login-header))
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        padding: 14px !important;
+    }
+}
+
+/* =========================================
+   DASHBOARD METRIC BOX TEXT VISIBILITY
+========================================= */
+
+/* Metric card background */
+.stApp:not(:has(.login-header))
+[data-testid="stMetric"] {
+    background: #eeebeb !important;
+    border: 1px solid #d9dced !important;
+    border-radius: 14px !important;
+    padding: 20px !important;
+}
+
+/* Metric title - Report Sections, AI Assistant */
+.stApp:not(:has(.login-header))
+[data-testid="stMetricLabel"],
+.stApp:not(:has(.login-header))
+[data-testid="stMetricLabel"] p,
+.stApp:not(:has(.login-header))
+[data-testid="stMetricLabel"] label {
+    color: #2c5491 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
+
+/* Metric values - 5, Available, PDF */
+.stApp:not(:has(.login-header))
+[data-testid="stMetricValue"],
+.stApp:not(:has(.login-header))
+[data-testid="stMetricValue"] div,
+.stApp:not(:has(.login-header))
+[data-testid="stMetricValue"] p {
+    color: #171936 !important;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    opacity: 1 !important;
+}
+
+/* Metric delta text */
+.stApp:not(:has(.login-header))
+[data-testid="stMetricDelta"] {
+    color: #5153b9 !important;
+}
+
+/* Ensure metric text is visible */
+.stApp:not(:has(.login-header))
+[data-testid="stMetric"] * {
+    opacity: 1 !important;
+}
+
+
